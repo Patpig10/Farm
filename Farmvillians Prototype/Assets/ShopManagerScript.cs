@@ -14,8 +14,11 @@ public class ShopManagerScript : MonoBehaviour
     public Text CropsTxt;
     public Text seedText;
     public static int goldObtained = 0; //can be put in player code but you must change some code in gold script
+    public float cropsCost;
+    public float goldLimit;
 
-    
+
+
     void Start()
     {
         CropsTxt.text = "Crops:" + crops;
@@ -60,16 +63,28 @@ public class ShopManagerScript : MonoBehaviour
 
     public void AddSeedForGold()
     {
-        goldObtained -= 3;
-        seed += 5;
+        if (goldObtained! >= goldLimit)
+        {
+            goldObtained -= 3;
+        }
+
+        if (goldObtained! >= goldLimit)
+        {
+            seed += 5;
+        }
 
     }
 
     public void AddSeedForCrop()
     {
-
-        crops--;
-        seed++;
+        if (crops! >= cropsCost)
+        {
+            crops--;
+        }
+        if (crops! >= cropsCost)
+        {
+            seed++;
+        }
 
     }
 }

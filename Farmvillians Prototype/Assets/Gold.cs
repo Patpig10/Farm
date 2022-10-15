@@ -14,7 +14,7 @@ public class Gold : MonoBehaviour
 
     private void Update()
     {
-        textNoCollected.text = "Gold : " + ShopManagerScript.goldObtained + "/15";
+        textNoCollected.text = "Gold : " + ShopManagerScript.goldObtained;
     }
 
 
@@ -26,7 +26,7 @@ public class Gold : MonoBehaviour
         /*if (ShopManagerScript.crops !> goldLimit)
          {
         }*/
-        if(ShopManagerScript.crops >= cropsCost)
+        if(ShopManagerScript.crops !>= cropsCost)
             ShopManagerScript.goldObtained += goldAmount;
         
     }

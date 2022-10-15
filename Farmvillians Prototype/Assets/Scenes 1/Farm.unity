@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6334088, g: 0.6565264, b: 0.7129688, a: 1}
+  m_IndirectSpecularColor: {r: 0.63340884, g: 0.65652657, b: 0.7129694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22227,7 +22227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNoCollected: {fileID: 4172535128408782843}
   goldAmount: 2
-  cropsCost: 0
+  cropsCost: 1
 --- !u!1 &4172535128902201771
 GameObject:
   m_ObjectHideFlags: 0
@@ -23559,6 +23559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CropsTxt: {fileID: 4172535128368822641}
   seedText: {fileID: 1616908244}
+  cropsCost: 1
+  goldLimit: 3
 --- !u!1 &4172535129528668169
 GameObject:
   m_ObjectHideFlags: 0
@@ -23620,7 +23622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNoCollected: {fileID: 4172535128408782843}
   goldAmount: 1
-  cropsCost: 0
+  cropsCost: 2
 --- !u!1 &4172535129675517118
 GameObject:
   m_ObjectHideFlags: 0
@@ -23923,7 +23925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNoCollected: {fileID: 4172535128408782843}
   goldAmount: 5
-  cropsCost: 0
+  cropsCost: 3
 --- !u!1 &4172535129889265201
 GameObject:
   m_ObjectHideFlags: 0
