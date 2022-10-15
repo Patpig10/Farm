@@ -11,8 +11,8 @@ public class ShopManagerScript : MonoBehaviour
     public int[,] peopleNames = new int[4, 4];
     public static int crops = 0;
     public static int seed = 6;
-    public Text CropsTxt;
-    public Text seedText;
+    public TMP_Text CropsTxt;
+    public TMP_Text seedText;
     public static int goldObtained = 0; //can be put in player code but you must change some code in gold script
     public float cropsCost;
     public float goldLimit;
@@ -66,10 +66,7 @@ public class ShopManagerScript : MonoBehaviour
         if (goldObtained! >= goldLimit)
         {
             goldObtained -= 3;
-        }
-
-        if (goldObtained! >= goldLimit)
-        {
+      
             seed += 5;
         }
 
@@ -80,9 +77,8 @@ public class ShopManagerScript : MonoBehaviour
         if (crops! >= cropsCost)
         {
             crops--;
-        }
-        if (crops! >= cropsCost)
-        {
+        
+        
             seed++;
         }
 
