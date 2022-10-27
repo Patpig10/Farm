@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNoCollected: {fileID: 4172535128466880884}
   goldAmount: 5
-  goldLimit: 0
+  cropsCost: 0
 --- !u!1 &4172535128045331560
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 4172535128466880886}
   - component: {fileID: 4172535128466880885}
   - component: {fileID: 4172535128466880884}
+  - component: {fileID: 3295534396405707932}
   m_Layer: 5
   m_Name: Gold
   m_TagString: Untagged
@@ -469,6 +470,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3295534396405707932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4172535128466880891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b4a43053b502d4eac25df23b574571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Day: {fileID: 0}
 --- !u!1 &4172535128513751691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNoCollected: {fileID: 4172535128466880884}
   goldAmount: 20
-  goldLimit: 30
+  cropsCost: 0
 --- !u!1 &4172535129316878516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,7 +1689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNoCollected: {fileID: 4172535128466880884}
   goldAmount: 10
-  goldLimit: 20
+  cropsCost: 0
 --- !u!1 &4172535129469263494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,7 +1734,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ed7bede48d7684e93993208fd37640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CropsTxt: {fileID: 4172535128582305790}
+  CropsTxt: {fileID: 0}
+  seedText: {fileID: 0}
+  cropsCost: 0
+  goldLimit: 0
 --- !u!1 &4172535129546587592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,7 +2120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.3976556}
+  m_AnchoredPosition: {x: 0, y: -0.000035375357}
   m_SizeDelta: {x: 0, y: 453}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4172535129810851472
@@ -2733,7 +2750,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4172535128232001738}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.00000040420633
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
