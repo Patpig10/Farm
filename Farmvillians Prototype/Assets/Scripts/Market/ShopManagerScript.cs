@@ -44,6 +44,7 @@ public class ShopManagerScript : MonoBehaviour
 
         CropsTxt.text = "Crops: " + crops;
         seedText.text = "Seeds: " + seed;
+
         
 
     }
@@ -83,4 +84,5 @@ public class ShopManagerScript : MonoBehaviour
         }
 
     }
+    
 }
