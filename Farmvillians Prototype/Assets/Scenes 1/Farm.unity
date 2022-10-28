@@ -1169,7 +1169,15 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: pb_Mesh38656
+=======
+<<<<<<< HEAD
+  m_Name: pb_Mesh25460
+=======
+  m_Name: pb_Mesh38392
+>>>>>>> origin/main
+>>>>>>> origin/main
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13797,7 +13805,15 @@ MonoBehaviour:
   currentGold: 30
   seedCost: 3
   seedPurchaseAmount: 5
+<<<<<<< HEAD
   maxBlightChance: 65
+=======
+<<<<<<< HEAD
+  maxBlightChance: 70
+=======
+  maxBlightChance: 0
+>>>>>>> origin/main
+>>>>>>> origin/main
   hoeUI: {fileID: 80667121}
   harvestUI: {fileID: 3616590}
   seedUI: {fileID: 2064659666}
