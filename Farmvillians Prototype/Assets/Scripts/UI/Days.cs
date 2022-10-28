@@ -23,13 +23,13 @@ public class Days : MonoBehaviour
     public void Update()
     {
 
-        if (Gold.goldObtained < debt)
+        if (ShopManagerScript.goldObtained < debt)
         {
-            SceneManager.LoadScene("Debt");
+            SceneManager.LoadScene(2);
 
         }
         Day.text = "Days: " + days;
-        if( days == 30)
+        if( days == 15)
         {
             SceneManager.LoadScene("GameWin");
 
