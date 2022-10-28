@@ -370,6 +370,7 @@
 "Assets/Scripts/Market/Gold.cs"
 "Assets/Scripts/Market/ShopManagerScript.cs"
 "Assets/Scripts/NPC Manager/ButtonInfo.cs"
+"Assets/Scripts/NPC Manager/CompanyCausations.cs"
 "Assets/Scripts/NPC Manager/HungerScript.cs"
 "Assets/Scripts/UI/PauseMenu.cs"
 -langversion:9.0

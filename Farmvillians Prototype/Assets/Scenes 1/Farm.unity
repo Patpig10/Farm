@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.63340884, g: 0.65652657, b: 0.7129694, a: 1}
+  m_IndirectSpecularColor: {r: 0.6334088, g: 0.6565264, b: 0.7129688, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1168,7 +1168,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25448
+  m_Name: pb_Mesh25460
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13400,6 +13400,7 @@ MonoBehaviour:
   currentGold: 30
   seedCost: 3
   seedPurchaseAmount: 5
+  maxBlightChance: 70
   hoeUI: {fileID: 80667121}
   harvestUI: {fileID: 3616590}
   seedUI: {fileID: 2064659666}
