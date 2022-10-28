@@ -16,7 +16,7 @@ public class Gold : MonoBehaviour
 
     private void Update()
     {
-        textNoCollected.text = "Gold : " + ShopManagerScript.goldObtained;
+        textNoCollected.text = "Gold : " + ShopManagerScript.goldObtained + "/ 15";
         if (goldObtained < -20)
         {
             SceneManager.LoadScene("Debt");

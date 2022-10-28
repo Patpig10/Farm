@@ -11,9 +11,9 @@ public class ButtonInfo : MonoBehaviour
     public TMP_Text PaymentTxt;
     public ShopManagerScript ShopManager;
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        DemandTxt.text = "Sell: " + ShopManager.peopleNames[2, PersonID].ToString() + " crops";
-        PaymentTxt.text = "For: " + ShopManager.peopleNames[3, PersonID].ToString() + " Gold";
+        DemandTxt.text = "Wants " + ShopManager.peopleNames[2, PersonID].ToString() + " crops";
+        PaymentTxt.text = "For " + ShopManager.peopleNames[3, PersonID].ToString() + " Gold";
     }
 }
