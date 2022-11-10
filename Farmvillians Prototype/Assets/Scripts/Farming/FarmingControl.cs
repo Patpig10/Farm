@@ -141,8 +141,12 @@ public class FarmingControl : MonoBehaviour
             case State.Seed:
                 if (!rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.activeInHierarchy && ShopManagerScript.seed > 0)
                 {
-                    ShopManagerScript.seed--;
-                    rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.SetActive(true);
+
+                    if (!rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.active)
+                    {
+                        rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.SetActive(true);
+                        ShopManagerScript.seed--;
+                    }
                 }
                 break;
             case State.Harvest:
@@ -200,11 +204,7 @@ public class FarmingControl : MonoBehaviour
         daysPassed++;
         ShopManagerScript.goldObtained -= goldPerDay;
 
-        if(ShopManagerScript.goldObtained <= 0)
-        {
-            currentGold = 0;
-            ShopManagerScript.seed -= Mathf.RoundToInt(ShopManagerScript.seed* 0.25f);
-        }
+
 
 
         foreach (FarmPlot plot in farmPlots) 
